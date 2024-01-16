@@ -1,0 +1,31 @@
+<main>
+  <div class="card">
+    <h3 class="card-header">New Post</h3>
+    <form class="card-body" id="add-post-form">
+      <div class="form-floating mb-3">
+        <p>Title</p>
+        <input type="text" id="post-title" name="post-title" class="form-input w-100" autofocus="true" placeholder="Title" />
+      </div>
+
+      <div class="form-floating mb-3">
+        <p>Content</p>
+        <textarea id="content" name="content" class="form-input w-100" aria-label="Content" style="height: 300px" autofocus="true" placeholder="What are you thinking?"></textarea>
+      </div>
+
+            <div class="form-floating mb-3">
+        <p>Skill Level</p>
+        <select id="skill-level" name="skill-level" class="form-select">
+          <option value="junior">Junior</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+          <option value="all-levels">All Levels</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-100 btn btn-lg mb-3 text-light" style="background-color:#009170;">Create Post</button>
+    </form>
+  </div>
+</main>
+
+<script src="/js/addPost.js"></script>

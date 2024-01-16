@@ -1,0 +1,22 @@
+<div>
+  {{#each this}}
+    <!-- Individual card container -->
+    <div class="card">
+      <!-- Card header (add content if needed) -->
+      <h3 class="card-header"></h3>
+
+      <!-- Comment section within the card body -->
+      <section class="comment card-body">
+        <!-- Text content of the comment -->
+        <div class="text">
+          <p>{{comment_text}}</p>
+        </div>
+
+        <!-- Meta information about the comment -->
+        <div class="meta">
+          <p>-{{member.username}}, {{format_date created_date}} {{format_time created_date}}</p>
+        </div>
+      </section>
+    </div>
+  {{/each}}
+</div>

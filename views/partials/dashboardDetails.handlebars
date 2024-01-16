@@ -1,0 +1,23 @@
+<!-- This is a card element for displaying information -->
+<div class="card">
+
+    <!-- Card header with a background color -->
+    <div class="card-header" style="background-color:#009170;">
+    
+        <!-- Title with a link to the dashboard edit page using dynamic ID -->
+        <h4><a class="link text-light" href="/dashboard/edit/{{id}}">{{title}}</a></h4>
+        
+        <!-- Subtitle displaying formatted creation date and time -->
+        <h6 class="mb-2 text-light">{{format_date created_date}} {{format_time created_date}} </h6>
+        
+        <!-- Display the golfer skill level -->
+        <p class="mb-2 text-light">Skill Level: {{skillLevel}}</p>
+    </div>
+    
+    <!-- Card body for displaying content -->
+    <div class="card-body">
+    
+        <!-- Paragraph displaying the content -->
+        <p class="card-text">{{content}}</p>
+    </div>
+</div>

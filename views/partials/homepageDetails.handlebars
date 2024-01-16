@@ -1,0 +1,20 @@
+<!-- Card element with margin-bottom -->
+<div class="card mb-5">
+
+    <!-- Card header with a specified background color -->
+    <div class="card-header"  style="background-color:#009170;">
+        
+        <!-- Card title with a link to the post using dynamic ID -->
+        <h4 class="card-title"><a class="text-light" href="/post/{{id}}">{{title}}</a></h4>
+        
+        <!-- Subtitle displaying member's username and formatted creation date and time -->
+        <h6 class="mb-2 text-light">Posted by {{member.username}} on {{format_date created_date}} {{format_time created_date}} </h6>
+    </div>
+    
+    <!-- Card body for displaying content -->
+    <div class="card-body">
+    
+        <!-- Paragraph displaying the content -->
+        <p class="card-text">{{content}}</p>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+/* Using Bootstrap */
+
+/* Optional: Use downloaded font as header */
+@font-face {
+    font-family: 'Bellfort';
+    src: url('fonts/bellfort_font/Bellfort.woff2') format('woff2'),
+        url('fonts/bellfort_font/Bellfort.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply Open Sans font to navbar-brand */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-logo {
+    min-width: 200px;
+}
+
+#login-form {
+    margin-top: 25px;
+  }
+
+  #signup-form {
+    margin-top: 25px;
+  }
+
+.custom-button {
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(to right, #009170, #6ac9ae);
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.8), transparent 70%);
+    border-radius: 50%;
+  }
+
+  .custom-button:hover {
+    background: linear-gradient(to right, #00664b, #4a9c82);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .login-link:hover {
+    background-color: rgba(0, 0, 0, 0.025);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  } 
+
+body {
+    /* golf tee background */
+    background-image: url('/images/golftee.jpg');
+    background-size: vw 100;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6C757D;
+  transition: color 0.3s ease-in-out; 
+}
+
+footer a:hover {
+  color: #4a9c82;
+}
+
+.social-media-links {
+  margin: 20px auto;
+}
+
+.social-media-icon {
+  padding: 5px;
+}
